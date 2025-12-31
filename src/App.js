@@ -96,7 +96,7 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-linen py-10 px-6 flex flex-col items-center">
+    <div className="min-h-screen bg-linen py-10 px-4 sm:px-6 lg:px-12 xl:px-20 flex flex-col items-center">
       <h1 className="font-serif text-4xl mb-1">{month} Ritual</h1>
       <p className="text-sm text-gray-600 mb-6">
         Gentle movement. Every day.
