@@ -121,7 +121,7 @@ export default function App() {
       </div>
 
       {/* Calendar Grid */}
-      <div className="grid grid-cols-7 gap-4">
+      <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-7 gap-3 sm:gap-4">
         {Array.from({ length: DAYS_IN_MONTH }).map((_, i) => {
           const day = i + 1
           const vn = stamps.find(s => s.day === day && s.user === "VN")
@@ -131,7 +131,12 @@ export default function App() {
             <div
               key={day}
               onClick={() => handleStamp(day)}
-              className="w-24 h-24 bg-white rounded-xl shadow-sm flex flex-col items-center justify-center cursor-pointer hover:shadow-md transition"
+              className="
+                w-full aspect-square
+                bg-white rounded-xl shadow-sm
+                flex flex-col items-center justify-center
+                cursor-pointer hover:shadow-md transition
+              "
             >
               <span className="text-xs text-gray-400 mb-1">{day}</span>
 
