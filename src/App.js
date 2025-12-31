@@ -136,8 +136,17 @@ export default function App() {
                 bg-white rounded-xl shadow-sm
                 flex flex-col items-center justify-center
                 cursor-pointer hover:shadow-md transition
+
+                text-sm
+                sm:text-base
+                md:text-lg
+
+                min-h-[64px]
+                sm:min-h-[80px]
+                md:min-h-[96px]
               "
             >
+
               <span className="text-xs text-gray-400 mb-1">{day}</span>
 
               <div className="flex gap-2">
